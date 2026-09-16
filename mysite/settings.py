@@ -117,15 +117,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-<<<<<<< HEAD
-STATICFILES_DIRS = [BASE_DIR / 'static']
-=======
 STATICFILES_DIRS = [
-    Path(BASE_DIR).joinpath('static'),
+    BASE_DIR / 'static',
 ]
-
-
->>>>>>> feature/arquivos-estaticos
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
 
