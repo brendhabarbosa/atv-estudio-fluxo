@@ -1,6 +1,6 @@
 {%extends "base.html" %}
-
-{%block context %}
+{% load static %}
+{%block content %}
 <section class="hero">
       <div class="container hero-inner">
         <div class="hero-text">
@@ -185,7 +185,7 @@
             <p>Conte um pouco sobre o seu projeto — a gente responde em até 2 dias úteis com os próximos passos.</p>
             <div class="cta-actions">
               <a class="btn btn-on-dark" href="mailto:ola@estudiofluxo.com.br">Enviar um e-mail</a>
-              <a class="btn btn-outline" style="border-color:#f7f5f1;color:#f7f5f1" href="portfolio.html">Ver portfólio</a>
+              <a class="btn btn-outline" style="border-color:#f7f5f1;color:#f7f5f1" href="{% url 'portfolio' %}">Ver portfólio</a>
             </div>
           </div>
         </div>
